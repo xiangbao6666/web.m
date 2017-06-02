@@ -1,0 +1,28 @@
+header, section, footer { width: 16rem; height: 3rem; }
+
+header { text-align: center; color: #fff; background: #DD3131; height: 60px; line-height: 60px; font-size: 25px; position: fixed; top: 0; }
+header .header-span-1, header .header-span-2 { float: left; width: 40px; height: 40px; margin: 10px; border-radius: 50%; border: 2px solid #fff; }
+header .header-span-1 img, header .header-span-2 img { width: 35px; height: 35px; }
+header .header-span-2 { float: right; }
+
+.box { position: fixed; top: 60px; width: 100%; height: 41px; border-bottom: 1px solid #ccc; }
+.box span { display: block; float: left; text-align: center; line-height: 50px; width: 25%; height: 100%; background: #fff; border-right: 1px solid #ccc; line-height: 100%; font-size: 20px; padding: 10px 0px; }
+.box span:last-child { border-right: none; }
+.box span:hover { color: #fff; background: #ccc; }
+
+section { height: 100%; position: absolute; top: 101px; overflow: auto; height: 5%rem; padding-bottom: 160px; }
+section ul { width: 100%; height: 100%; }
+section ul li { width: 100%; height: 100px; border-bottom: 1px solid #ccc; }
+section ul li img { width: 90px; height: 90px; margin: 5px; float: left; }
+section ul li .li-div { width: 100%; height: 100%; margin-left: 100px; }
+section ul li .li-div h3 { width: 100%; height: 30px; line-height: 30px; color: #4A4A4A; margin: 10px 0px 0px; }
+section ul li .li-div p { width: 70%; color: #ccc; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+
+footer { text-align: center; color: #fff; height: 60px; font-size: 25px; position: fixed; bottom: 0; }
+footer span { display: block; float: left; text-align: center; line-height: 60px; width: 25%; height: 60px; background: #4A4A4A; border-right: 1px solid #fff; line-height: 100%; font-size: 16px; }
+footer span i { margin: 0px auto; width: 40px; height: 25px; text-align: center; display: block; margin: 10px auto 3px; }
+footer span i img { width: 40px; height: 25px; }
+footer span:last-child { border-right: none; }
+footer span:hover { color: #fff; background: #DD3131; }
+
+/*# sourceMappingURL=webtwo.css.map */
