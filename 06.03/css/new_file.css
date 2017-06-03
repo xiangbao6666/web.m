@@ -1,0 +1,29 @@
+* { margin: 0; padding: 0; }
+
+html, body { width: 100%; height: 100%; overflow: hidden; }
+
+.box { width: 100%; height: 100%; display: flex; overflow: hidden; flex-direction: column; }
+.box header { width: 100%; height: 50px; background: #0DC441; display: flex; }
+.box header .glyphicon-align-justify, .box header .glyphicon-new-window { color: #fff; text-align: center; line-height: 40px; font-size: 20px; padding: 0px 0px 0px 10px; }
+.box header .glyphicon-new-window { padding-right: 10px; }
+.box header p { flex: 1; width: 100%; text-align: center; height: 100%; margin: 0; }
+.box header p span { width: 80px; height: 30px; display: inline-block; text-align: center; line-height: 30px; margin-top: 5px; color: #fff; font-size: 16px; }
+.box header p span:first-child { border-top-left-radius: 15px; border-bottom-left-radius: 15px; margin-right: -2px; background: #0AD985; }
+.box header p span:last-child { border-top-right-radius: 15px; border-bottom-right-radius: 15px; margin-left: -2px; background: #0BCE63; }
+.box .header-div { width: 100%; height: 40px; border-bottom: 1px solid #ccc; display: flex; }
+.box .header-div span { text-align: center; line-height: 40px; font-size: 18px; flex: 1; }
+.box .header-div span:first-child { border-bottom: 2px solid #00C034; color: #00C034; }
+.box section { width: 100%; height: 100%; overflow: auto; }
+.box section ul { width: 100%; height: 100%; }
+.box section ul li { width: 100%; height: 180px; }
+.box section ul li img { width: 50%; height: 180px; float: left; }
+.box footer { width: 100%; height: 50px; background: #fff; text-align: center; line-height: 50px; }
+.box footer ul { width: 100%; height: 100%; display: flex; list-style: none; }
+.box footer li { display: flex; text-align: center; flex: 1; font-size: 20px; color: #ccc; line-height: 20px; flex-direction: column; }
+.box footer li span { padding: 5px 0px 0px; }
+.box footer li b { padding: 5px 0px 0px; font-size: 15px; }
+.box footer li:first-child { color: #00C034; }
+.box footer .lis { flex: none; border: 1px solid #ccc; background: #fff; border-radius: 50%; text-align: center; position: relative; top: -10px; line-height: 50px; }
+.box footer .glyphicon-camera { padding: 0; width: 50px; height: 50px; line-height: 50px; font-size: 30px; }
+
+/*# sourceMappingURL=new_file.css.map */
