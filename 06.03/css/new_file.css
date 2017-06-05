@@ -11,10 +11,10 @@ html, body { width: 100%; height: 100%; overflow: hidden; }
 .box header p span:first-child { border-top-left-radius: 15px; border-bottom-left-radius: 15px; margin-right: -2px; background: #0AD985; }
 .box header p span:last-child { border-top-right-radius: 15px; border-bottom-right-radius: 15px; margin-left: -2px; background: #0BCE63; }
 .box .header-div { width: 100%; height: 40px; border-bottom: 1px solid #ccc; display: flex; }
-.box .header-div span { text-align: center; line-height: 40px; font-size: 18px; flex: 1; }
+.box .header-div span { text-align: center; line-height: 40px; font-size: 18px; flex:1; }
 .box .header-div span:first-child { border-bottom: 2px solid #00C034; color: #00C034; }
 .box section { width: 100%; height: 100%; overflow: auto; }
-.box section ul { width: 100%; height: 100%; }
+.box section ul { width: 100%;height: 100%; }
 .box section ul li { width: 100%; height: 180px; }
 .box section ul li img { width: 50%; height: 180px; float: left; }
 .box footer { width: 100%; height: 50px; background: #fff; text-align: center; line-height: 50px; }
