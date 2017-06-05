@@ -6,6 +6,10 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/therrweb.css" />
+		<script type="text/javascript" src="js/iscroll5.js" ></script>
+		<script>
+			document.documentElement.style.fontSize=innerWidth/16+"px";
+		</script>
 	</head>
 	<body>
 		<div class="box">
@@ -31,8 +35,22 @@
 				</div>	
 				
 			</div>
-			<section>
-				<img src="img/0 (1).jpg"/>
+			<section id="section-1">
+				<div class="imgs" id="imgs">
+					<ul id="uls">
+						<li>
+							<img src="img/0 (1).jpg"/>
+						</li>
+						<li>
+							<img src="img/0.jpg"/>
+						</li>
+						<div id="ols">
+							<span class="on"></span>
+							<span></span>
+						</div>
+					</ul>
+					
+				</div>
 				<div class="section-div-1">
 					<p><span>H5精选</span><span>|</span>端午节微信刷屏小游戏
 						<img src="img/yticon.png"/></p>
@@ -79,6 +97,89 @@
 				
 			</footer>
 		</div>
+		<script>
+			var a=new IScroll("#section-1");
+			var imgs=document.getElementById("imgs");
+			var uls=document.getElementById("uls");
+			var lis=document.getElementsByTagName("li");
+			var ols=document.getElementById("ols");
+			var span2=ols.getElementsByTagName("span");
+				imgs.addEventListener("touchstart",function(ev){
+				ev.preventDefault();//取消事件的默认动作.
+			})
+			var leftp=0;
+			var ol=lis.length;
+			var w=lis[0].clientWidth;
+			var imgsx;
+			var n=0;
+			var timer;
+			uls.addEventListener("touchstart",function(ev){
+				imgsx=ev.changedTouches[0].pageX;//changedTouches: 涉及当前(引发)事件的触摸		
+				leftp=this.offsetLeft;
+				clearInterval(timer);
+			})
+			
+			uls.addEventListener("touchmove",function(ev){
+				uls.style.left=(ev.changedTouches[0].pageX-imgsx)+leftp+"px";
+			})
+			uls.addEventListener("touchend",function(ev){ //touchend事件：当手指从屏幕上离开的时候触发。
+				n=Math.round(this.offsetLeft/w);//Math.round(x);返回数字最接近的整数
+				console.log(n)
+				if(n==0){
+					uls.style.left=n*w+"px";
+					span2[0].style.background="red";
+					span2[1].style.background="#fff";
+				}
+				else if(n==-1){
+					uls.style.left=n*w+"px";
+					span2[1].style.background="red";
+					span2[0].style.background="#fff";
+				}
+				else if(n<-1){
+					uls.style.left=-w+"px";
+				}
+				else{
+					uls.style.left=0+"px";
+				}
+				show();
+			})
+			function show(){
+				timer=setInterval(function(){
+					n--;
+					if(n<-1){
+						n=0;
+					}
+					uls.style.left=n*w+"px";
+					if(n==0){
+						span2[0].style.background="red";
+						span2[1].style.background="#fff";
+					}
+					else{
+						span2[1].style.background="red";
+						span2[0].style.background="#fff";
+					}
+				},3000);
+			}
+ 			show();
+		</script>
 		
 	</body>
 </html>
+
+
+
+
+
+
+	<!--var n=Math.round(this.offsetLeft/w);
+				console.log(n)
+				if(n==0){
+					uls.style.left=n*w+"px";	
+				}else if(n==-1){
+					uls.style.left=n*w+"px";
+				}else if(n<-1){
+					uls.style.left=-w+"px";
+				}else if(n>0){
+					uls.style.left=0+"px";
+					console.log(uls)
+				}-->
