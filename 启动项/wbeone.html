@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			html,body{
+				width: 100%;
+				height: 100%;
+			}
+			ul{
+				list-style: none;
+				width: 100%;
+			}
+			.imagelist li{
+				float: left;
+				overflow: hidden;
+			}
+			#large{
+				display: none;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+				background: #000;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="imagelist">
+			
+		</ul>
+		<div class="large" id="large">
+			<img src="" alt="" id="largeImage" />
+		</div>
+		<script>
+			$(function(){
+				var len=16;
+				var simg="";
+				$winw=$(window).width();
+				var tw=$winw/4;
+				for(var i=0;i<=15;i++){
+					simg+='<li style="width:'+tw+'px;height:'+tw+'px"><canvas id=can'+i+'></canvas></li>';
+					var t=new Image;
+					t.index=i;
+					t.src="images/"+i+".jpg";
+					t.onload=function(){
+						var ogc=$("#can"+this.index)[0].getContext("2d");
+						ogc.drawImage(this,0,0,t.width,t.height);
+					}
+					
+				}
+				$(".imagelist").html(simg);
+				$(".imagelist").on("tap","li",function(){
+					$("#large").show();
+					var index=$(this).index();
+					showLargeImage(index);
+				})
+				$("#large").on("tap",function(){
+					$(this).hide();
+				})
+				function showLargeImage(n){
+					var t=new Image;
+					t.src="images/"+n+".large.jpg";
+					t.onload=function(){
+						$("#largeImage").attr("src",t.src);
+						var tw=this.width;
+						var th=this.height;
+						var ww=$(window).width();
+						var wh=$(window).height();
+						var wsc=ww/tw;
+						var hsc=wh/th;
+						var curw=tw*wsc;
+						var curh=th*hsc;
+						console.log(tw,th,ww,wh,wsc,hsc,curw,curh);
+						if(tw>th){  //横板
+							$("#largeImage").css({
+								width:'100%',
+								height:'auto',
+								marginTop:'50%',
+								marginLeft:0
+							})
+						}
+						else{
+							$("#largeImage").css({
+								width:'auto',
+								heigth:'100%',
+								marginTop:0,
+								marginLeft:(ww-curw)/2+"px"
+							})
+						}
+					}
+				}
+			})
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<script src="js/zepto.min.js"></script>		
+	
+		
+	</head>
+	<style>
+		  *{
+		  	padding:0;margin:0;
+		  }
+		  html,body{
+		  	 width:100%;
+		  	 height: 100%;		  	
+		  } 
+		  ul{
+		  	 list-style: none;
+		  	 
+		  	 width: 100%;
+		  } 
+		  .imagelist li{
+		  	  float:left;
+		  	  overflow: hidden;
+		  }
+		  #large{
+		  	display: none;
+		  	position:absolute;
+		  	width:100%;
+		  	height: 100%;
+		  	left:0;
+		  	top:0;
+		  	background: #000;
+		  }
+	</style>
+	<body>
+		   <ul class="imagelist">
+		   	
+		   </ul>
+		   <div id="large">
+		   	<img src="" alt="" id="largeImage" />
+		   </div>
+		   <script>
+		   	$(function(){
+		   		  var len=16;
+		   	    var simg='';
+		   	    $winw=$(window).width();
+		   	    var tw=$winw/4;
+		   	     for(var i=0;i<=15;i++){
+		   	     	
+		   	     	simg+='<li style="width:'+tw+'px;height:'+tw+'px"><canvas id=can'+i+'></canvas></li>';
+		   	  
+		   	     	var t=new Image;
+		   	     	t.index=i;
+		   	     	t.src="images/"+i+".jpg";
+		   	     	t.onload=function(){
+		   	     		var ogc=$("#can"+this.index)[0].getContext("2d");
+		   	     		ogc.drawImage(this,0,0,t.width,t.height);
+		   	     	}
+		   	     }
+		   	     	alert(simg);
+		   	     $(".imagelist").html(simg);
+		   	     $(".imagelist").on("tap","li",function(){
+		   	     	   $("#large").show();
+		   	     	   var index=$(this).index();
+		   	     	   showLargeImage(index);
+		   	     })
+		   	     
+		   	     $("#large").on("tap",function(){
+		   	     	  $(this).hide();
+		   	     })
+		   	     function showLargeImage(n){
+		   	     	   var t=new Image;
+		   	     	   t.src="images/"+n+".large.jpg";
+		   	     	   t.onload=function(){
+		   	     	   	    $("#largeImage").attr("src",t.src);
+		   	     	   	    
+		   	     	   	    var tw=this.width;
+		   	     	   	    var th=this.height;
+		   	     	   	    var ww=$(window).width();
+		   	     	   	    var wh=$(window).height();
+		   	     	   	    var wsc=ww/tw;
+		   	     	   	    var hsc=wh/th;
+		   	     	   	   
+		   	     	   	    var curw=tw*wsc;
+		   	     	   	    var curh=th*hsc;
+//		   	     	   	    console.log(curw,curh,ww,wh,tw,th,wsc,hsc);
+		   	     	   	    if(tw>th){  //横板
+		   	     	   	    	 $("#largeImage").css({
+		   	     	   	    	   	width:'100%',
+		   	     	   	    	   	height:'auto',
+		   	     	   	    	   	marginTop:"50%",
+		   	     	   	    	   	marginLeft:0
+		   	     	   	          })
+		   	     	   	    }
+		   	     	   	    else{
+		   	     	   	    	 $("#largeImage").css({
+		   	     	   	    	   	width:'auto',
+		   	     	   	    	   	height:'100%',
+		   	     	   	    	   	marginTop:0,
+		   	     	   	    	   	marginLeft:(ww-curw)/2+"px"
+		   	     	   	          })
+		   	     	   	    }
+		   	     	   	   
+		   	     	   	    
+		   	     	   }
+		   	     }
+		   		
+		   	})
+		   	   
+		   </script>
+	</body>
+</html>-->
