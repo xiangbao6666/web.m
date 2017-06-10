@@ -1,0 +1,56 @@
+{
+	"train":[
+       {
+			"car":"k211",
+			"time":"1小时30分",
+			"count":"114张",
+			"start":"00:23",
+			"placestart":"北京",
+			"price":"￥29",
+			"end":"12:23",
+			"placeend":"黑河"
+		},
+		 {
+			"car":"k112",
+			"time":"12小时30分",
+			"count":"4张",
+			"start":"12:00",
+			"placestart":"北京",
+			"price":"￥135",
+			"end":"01:23",
+			"placeend":"河南"
+		},
+		 {
+			"car":"D229",
+			"time":"1小时02分",
+			"count":"534张",
+			"start":"08:34",
+			"placestart":"大同",
+			"price":"￥399",
+			"end":"10:23",
+			"placeend":"北京"
+		},
+		 {
+			"car":"k2217",
+			"time":"8小时30分",
+			"count":"44张",
+			"start":"16:23",
+			"placestart":"内蒙古",
+			"price":"￥129",
+			"end":"16:15",
+			"placeend":"海南"
+		},
+		{
+			"car":"k512",
+			"time":"3小时30分",
+			"count":"11张",
+			"start":"11:23",
+			"placestart":"北京",
+			"price":"￥19",
+			"end":"12:13",
+			"placeend":"黑河"
+		}
+
+	]
+
+}

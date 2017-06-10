@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>列车时间查询</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<script type="text/javascript" src="js/zepto.min.js" ></script>
+		<script type="text/javascript" src="js/new_filezy.js" ></script>
+		<link rel="stylesheet" href="css/new_filezy.css" />
+		<!--<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">-->
+		<script>
+			document.documentElement.style.fontSize=innerWidth/16+"px";
+		</script>
+	</head>
+	<body>
+		<div id="container" class="container">
+			<header>列车时刻查询</header>
+			<section id="sections">
+					<ul class="uls-1">
+						<li>
+							<h3>发车站:</h3>
+							<input type="text" class="f"/>
+						</li>
+						<li>
+							<h3>终点站:</h3>
+							<input type="text" class="z"/>
+						</li>
+						<li>
+							<h3>车次:</h3>
+							<input type="text" class="c"/>
+						</li>
+						<li><input type="button" value="搜索" class="bnt"/></li>
+					</ul>
+					<ul class="uls-2">
+						<h1>
+							<span><u>＜</u>北京南－天津</span>
+							<span>2016-05-21&nbsp;星期六</span>
+						</h1>
+						<h2>
+							<span><u>＜</u>前一天</span>
+							<span>后一天<u>＞</u></span>
+						</h2>
+						<h3>
+							<span>按出发时间</span>
+							<span>按运行时长</span>
+							<span>按票价</span>
+							<span><u>筛选 <i></i></u></span>
+						</h3>
+						<div class="dis"></div>
+					</ul>
+			</section>
+			<footer>
+				<div>
+					<p>
+						<span><i class="glyphicon glyphicon-th-large"></i></span>
+						<span>查询</span>	
+					</p>
+					<p>
+						<span>
+							<i class="glyphicon glyphicon-star"></i></span>
+						<span>收藏</span>
+					</p>
+					<p>
+						<span><i class="glyphicon glyphicon-cog"></i></span>
+						<span>设置</span>
+					</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

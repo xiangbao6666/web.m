@@ -1,0 +1,53 @@
+* { margin: 0; padding: 0; }
+
+html, body { width: 100%; height: 100%; overflow-y: hidden; }
+
+ul, ol { list-style: none; }
+
+a { text-decoration: none; }
+
+.container { width: 100%; height: 100%; display: -webkit-flex; flex-direction: column; }
+
+header { width: 100%; height: 2.5rem; line-height: 2.5rem; font-size: 0.9rem; background: #E9E9E9; text-align: center; position: relative; top: 0; left: 0; }
+
+section { width: 200%; height: auto; flex: 1; display: flex; background: #F9F9F9; overflow: auto; overflow-y: hidden; transition: transform 1s; }
+
+.uls-1 { width: 100%; height: 100%; background: #F9F9F9; }
+.uls-1 li { width: 90%; height: 5rem; margin-left: 0.6rem; border-bottom: 1px solid #ccc; }
+.uls-1 li h3 { font-size: 0.8rem; padding: 1rem 0rem 0.25rem; font-weight: 200; }
+.uls-1 li input { width: 100%; height: 1.5rem; border-radius: 8px; border: none; box-shadow: 0px 0px 10px #ccc inset; outline: none; }
+.uls-1 li:last-child { line-height: 1.5rem; border-bottom: none; }
+.uls-1 li:last-child input { margin-top: 1.5rem; height: 2rem; font-size: 0.9rem; color: #fff; }
+.uls-1 li:last-child input:hover { background: green; }
+
+.uls-2 { width: 100%; height: 140%; background: #fff; position: relative; }
+.uls-2 h1 { width: 100%; background: #25A4BB; color: #fff; display: flex; flex-direction: column; z-index: 99; position: absolute; top: 0; left: 0; }
+.uls-2 h1 span { flex: 1; text-align: center; font-size: 16px; line-height: 16px; }
+.uls-2 h1 span u { text-decoration: none; float: left; margin: 10px 0px 0px 10px; font-size: 25px; }
+.uls-2 h1 span:first-child { margin-top: 10px; }
+.uls-2 h1 span:last-child { flex: 1; font-size: 14px; }
+.uls-2 h2 { width: 100%; height: 2.5rem; display: flex; position: absolute; top: 52px; left: 0; background: #25A4BB; }
+.uls-2 h2 span { flex: 1; text-align: center; font-size: 16px; line-height: 16px; line-height: 2.5rem; border: 1px solid #ccc; color: #fff; }
+.uls-2 h2 span u { text-decoration: none; margin: 10px; font-size: 20px; }
+.uls-2 h3 { width: 100%; height: 2rem; display: flex; position: absolute; top: 102px; left: 0; background: #F4F4F4; }
+.uls-2 h3 span { flex: 1; text-align: center; line-height: 2rem; font-size: 14px; }
+.uls-2 h3 span u { text-decoration: none; display: inline-block; width: 60px; height: 30px; border: 1px solid #25A4BB; color: #25A4BB; margin-top: 7px; line-height: 30px; text-align: center; }
+.uls-2 h3 span u i { margin-top: 5px; display: inline-block; width: 0; height: 0; border-width: 5px; border-style: solid; border-color: transparent transparent transparent #ccc; }
+.uls-2 .dis { overflow-y: auto; width: 100%; height: auto; background: #F4F4F4; position: absolute; top: 146px; left: 0; }
+.uls-2 .lis { width: 100%; height: 4rem; border-bottom: 1px solid #ccc; z-index: 99; }
+.uls-2 .lis h5 { margin-left: 10px; color: cornflowerblue; }
+.uls-2 .lis h5 .h5-sapn { display: inline-block; float: right; margin-right: 10px; font-size: 14px; color: #ccc; margin-top: 10px; }
+.uls-2 .lis p { margin-left: 10px; font-size: 16px; margin-top: 5px; }
+.uls-2 .lis p span { margin-left: 30px; }
+.uls-2 .lis p .ps { font-size: 18px; color: #FF6600; display: inline-block; float: right; margin-right: 10px; }
+
+footer { width: 100%; height: 3rem; position: relative; bottom: 0; left: 0; }
+footer div { width: 100%; height: 100%; display: flex; }
+footer div p { flex: 1; width: 100%; height: 100%; -webkit-display: flex; flex-direction: column; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc; border-right: 1px solid #ccc; margin: 0; padding: 0; }
+footer div p:last-child { border-right: 1px solid #fff; }
+footer div p:hover { background: #3388CC; }
+footer div p span { font-size: 0.8rem; text-align: center; width: 100%; height: 50%; display: inline-block; flex: 1; }
+footer div p span i { text-align: center; display: inline-block; width: 25px; height: 25px; background: #ccc; border-radius: 50%; margin-top: 5px; color: #fff; }
+footer div p span .glyphicon { line-height: 25px; }
+
+/*# sourceMappingURL=new_filezy.css.map */
