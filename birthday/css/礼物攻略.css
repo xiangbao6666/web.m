@@ -1,0 +1,185 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.lagestyle{
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+section{
+	width: 100%;
+	height:100%;
+	margin-top: 30px;
+	display: inline-block;
+	background: #F6F4F4;
+	overflow: auto;
+}
+.container{
+	width: 970px;
+	background: #F6F4F4;
+	margin: auto;
+	height: auto;
+}
+
+.kuai{
+	width: 100%;
+	overflow: hidden;
+}
+.left,.right{
+	float: left;
+	height: 386px;
+	width: 485px;
+}
+.right a{
+	margin-left: 35px;
+}
+ .kuai a{
+	text-decoration: none;
+	display: block;
+	height: 316px;
+	width: 450px;
+	box-sizing: border-box;
+	background: white;
+	padding: 5px;
+	overflow: hidden;
+}
+.img{
+	width: 100%;
+	position: relative;
+}
+.img img{
+	width: 100%;
+	height: auto;
+	transition: all 0.3s;
+}
+.left h5,.right h5{
+	text-align: center;
+	margin-top: 30px;
+	color: black;
+}
+.btn{
+	margin-top: 20px;
+	width: 100%;
+	height: 32px;
+}
+.btn i{
+	display: block;
+	height: 31px;
+	width: 31px;
+	border-radius: 50%;
+	border: 1px solid #E4E4E4;
+	margin: auto;
+	position: relative;
+	background: white;
+}
+.btn i p{
+	display: block;
+	height: 12px;
+	width: 12px;
+	background: url(../img/QQ截图20170607210530.png)no-repeat;
+	margin:9px auto;
+	
+}
+.mc{
+	height: 180px;
+	width: 100%;
+	background: white;
+	position: absolute;
+	opacity: 0;
+	transition: all 0.35s;
+}
+.kuai a:hover .mc{
+	opacity: 0.15;
+}
+.kuai a:hover h5{
+	color: #F44236;
+}
+.kuai a:hover img{
+	transform: scale(0.97,0.97);
+}
+.return{
+	height: 60px;
+	width: 50px;
+	background: #6E6D6D;
+	position: fixed;
+	bottom: -10px;
+	right: 10px;
+	border-radius: 7px;
+	text-align: center;
+	font-size: 24px;
+	color: white;
+	font-weight: bold;
+	line-height: 55px;
+	transition: all 0.3s;
+	cursor: pointer;
+	display: none;
+	z-index: 100;
+}
+.return:hover{
+	color: #F47F77;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

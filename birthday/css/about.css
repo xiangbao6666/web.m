@@ -1,0 +1,53 @@
+.main { width: 100%; height: auto; }
+.main section { width: 1200px; margin: 120px auto 0 auto; height: auto; overflow: hidden; position: relative; top: 0px; }
+.main section .row { width: 100%; height: auto; margin: 0 auto; }
+.main section .row .col-md-2 { width: 16%; float: left; padding-left: 15px; padding-right: 15px; position: fixed; top: 100px; left: 100px; }
+.main section .row .col-md-2 .pin-wrapper { height: 324px; }
+.main section .row .col-md-2 .pin-wrapper aside { width: 175px; margin-top: 30px !important; }
+.main section .row .col-md-2 .pin-wrapper aside ul { background: white; margin-bottom: 25px !important; }
+.main section .row .col-md-2 .pin-wrapper aside ul li { margin: 0; padding: 0; display: block; position: relative; line-height: 24px; }
+.main section .row .col-md-2 .pin-wrapper aside ul li a { border-bottom: none; padding: 15px 0; text-align: center; display: block; color: #b8b8b8; font-size: 14px; text-decoration: none; position: relative; font-weight: bold; }
+.main section .row .col-md-2 .pin-wrapper aside ul li a::before { content: '>'; display: inline-block; width: 10px; height: 10px; position: absolute; top: 15px; right: 35px; }
+.main section .row .col-md-2 .pin-wrapper aside ul li:not(:last-child) a:after { content: ''; display: block; position: absolute; bottom: 0; left: 50px; right: 50px; border-bottom: 1px dashed #EDEDDE; }
+.main section .row .col-md-10 { width: 84%; height: auto; float: left; position: relative; left: 200px; min-height: 1px; padding-right: 15px; padding-left: 15px; }
+.main section .row .col-md-10 .mm1 { background-color: white; padding-right: 30px !important; padding-bottom: 30px !important; padding-top: 30px !important; margin-top: 30px !important; margin-bottom: 100px; }
+.main section .row .col-md-10 .mm1 #about-us { width: 100%; height: auto; }
+.main section .row .col-md-10 .mm1 #about-us .blockquote-primary { border-color: #f44236 !important; padding: 0 20px; font-size: 1rem; display: block; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 40px; -webkit-margin-end: 40px; border-left: 5px solid #eee; }
+.main section .row .col-md-10 .mm1 #about-us .blockquote-primary .mb-none { font-size: 32px; font-weight: 100; line-height: 42px; margin: 0 0 32px 0; color: #1d2127; margin-bottom: 0 !important; }
+.main section .row .col-md-10 .mm1 #about-us .blockquote-primary .lead { font-family: "courier new"; color: #b8b8b8; font-size: 28px; line-height: 28px; margin-top: 10px; text-transform: uppercase; margin-bottom: 0; font-weight: normal; }
+.main section .row .col-md-10 .mm1 #about-us .md-ml { margin-left: 150px; width: auto; height: auto; }
+.main section .row .col-md-10 .mm1 #about-us .md-ml .row1 { margin-right: -15px; margin-left: -15px; display: block; border-bottom: silver 1px dashed; padding-bottom: 20px; }
+.main section .row .col-md-10 .mm1 #about-us .md-ml .row1 .col-md-6 { display: inline-block; width: 50%; overflow: hidden; height: auto; float: left; padding: 15px; }
+.main section .row .col-md-10 .mm1 #about-us .md-ml .row1 .col-md-6 .text-indent { width: 100%; height: auto; text-indent: 28px; color: #999; line-height: 24px; margin: 0 0 20px; word-wrap: break-word; word-break: break-all; overflow: hidden; }
+.main section .row .col-md-10 .company-growth { width: 100%; height: auto; margin-top: 50px; }
+.main section .row .col-md-10 .company-growth .blockquote-primary { border-color: #f44236 !important; padding: 0 20px; font-size: 25px; font-weight: 200; display: block; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 40px; -webkit-margin-end: 40px; border-left: 5px solid #eee; }
+.main section .row .col-md-10 .company-growth .blockquote-primary .mb-none { font-size: 32px; font-weight: 100; line-height: 42px; margin: 0 0 32px 0; color: #1d2127; margin-bottom: 0 !important; }
+.main section .row .col-md-10 .company-growth .blockquote-primary .lead { font-family: "courier new"; color: #b8b8b8; font-size: 28px; line-height: 28px; margin-top: 10px; text-transform: uppercase; margin-bottom: 0; font-weight: normal; }
+.main section .row .col-md-10 .company-growth .md-ml { margin-left: 150px; width: auto; height: auto; }
+.main section .row .col-md-10 .company-growth .md-ml .list-icon li { height: 50px; margin-bottom: 20px; }
+.main section .row .col-md-10 .company-growth .md-ml .list-icon li .fa-circle { display: inline-block; width: 12px; height: 12px; background: red; border-radius: 50%; }
+.main section .row .col-md-10 .company-growth .md-ml .list-icon li .p-l { display: inline-block; width: 112px; }
+.main section .row .col-md-10 .company-growth .md-ml .list-icon li p { margin-top: -20px; }
+.main section .row .col-md-10 .company-growth .md-ml #dixs, .main section .row .col-md-10 .company-growth .md-ml #dixss { width: 100%; border-bottom: 2px dashed #E9E8E8; }
+.main section .row .col-md-10 .company-growth-two, .main section .row .col-md-10 .company-growth-theer, .main section .row .col-md-10 .company-growth-theer-s { width: 100%; height: auto; margin-top: 50px; }
+.main section .row .col-md-10 .company-growth-two .blockquote-primary, .main section .row .col-md-10 .company-growth-theer .blockquote-primary, .main section .row .col-md-10 .company-growth-theer-s .blockquote-primary { border-color: #f44236 !important; padding: 0 20px; font-size: 25px; font-weight: 200; display: block; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 40px; -webkit-margin-end: 40px; border-left: 5px solid #eee; }
+.main section .row .col-md-10 .company-growth-two .blockquote-primary .mb-none, .main section .row .col-md-10 .company-growth-theer .blockquote-primary .mb-none, .main section .row .col-md-10 .company-growth-theer-s .blockquote-primary .mb-none { font-size: 32px; font-weight: 100; line-height: 42px; margin: 0 0 32px 0; color: #1d2127; margin-bottom: 0 !important; }
+.main section .row .col-md-10 .company-growth-two .blockquote-primary .lead, .main section .row .col-md-10 .company-growth-theer .blockquote-primary .lead, .main section .row .col-md-10 .company-growth-theer-s .blockquote-primary .lead { font-family: "courier new"; color: #b8b8b8; font-size: 28px; line-height: 28px; margin-top: 10px; text-transform: uppercase; margin-bottom: 0; font-weight: normal; }
+.main section .row .col-md-10 .company-growth-two li, .main section .row .col-md-10 .company-growth-theer li, .main section .row .col-md-10 .company-growth-theer-s li { border-left: 4px  solid #ccc; height: 148px; margin-left: 150px; margin-bottom: 20px; }
+.main section .row .col-md-10 .company-growth-two li .h-l, .main section .row .col-md-10 .company-growth-theer li .h-l, .main section .row .col-md-10 .company-growth-theer-s li .h-l { display: inline-block; font-size: 16px; margin-left: 20px; margin-bottom: 20px; color: #000000; }
+.main section .row .col-md-10 .company-growth-two li p, .main section .row .col-md-10 .company-growth-theer li p, .main section .row .col-md-10 .company-growth-theer-s li p { display: block; margin-left: 20px; }
+.main section .row .col-md-10 .company-growth-two li .pspss, .main section .row .col-md-10 .company-growth-theer li .pspss, .main section .row .col-md-10 .company-growth-theer-s li .pspss { text-align: right; margin-top: 20px; }
+.main section .row .col-md-10 .company-growth-two li .pspss a, .main section .row .col-md-10 .company-growth-theer li .pspss a, .main section .row .col-md-10 .company-growth-theer-s li .pspss a { color: #ccc; }
+.main section .row .col-md-10 .company-growth-theer .lis { width: 798px; margin-left: 150px; height: auto; }
+.main section .row .col-md-10 .company-growth-theer .lis .h-l { color: #999999; font-size: 14px; }
+.main section .row .col-md-10 .company-growth-theer-s .company-growth-theer-s-div { margin-left: 150px; height: 500px; width: 978px; }
+.main section .row .col-md-10 .company-growth-theer-s .company-growth-theer-s-div .s-div-one { width: 211px; height: 130px; float: left; }
+.main section .row .col-md-10 .company-growth-theer-s .company-growth-theer-s-div .s-div-one img { margin-left: auto; margin-top: auto; width: 152px; height: 87px; }
+
+.a-bottm { z-index: 1000; width: 48px; height: 50px; position: fixed; bottom: 0; right: 25px; background: rgba(0, 0, 0, 0.6); border-top-left-radius: 8px; border-top-right-radius: 8px; text-align: center; }
+.a-bottm .i-s { font-style: normal; font-size: 30px; text-decoration: none; text-align: center; line-height: 50px; color: #fff; }
+.a-bottm .i-s:hover { color: #B8433B; }
+
+.color { color: #F44236; }
+
+/*# sourceMappingURL=about.css.map */
