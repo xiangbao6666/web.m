@@ -4,11 +4,10 @@
 		<meta charset="utf-8" />
 		<title></title>
 		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
-		
+		<link rel="shortcut icon" href="https://static.shengri.cn/uploads/icon/icon7/cal_icon_57.png">
 		<link rel="stylesheet" href="css/reset.css" /> 
 		<link rel="stylesheet" type="text/css" href="css/top_big.css" media="screen and (min-width:1200px)"/>
 		<link rel="stylesheet" type="text/css" href="css/top_min.css" media="screen and (max-width:1200px)" />
-		 
 		<link rel="stylesheet" media="screen and (min-width:1200px)" href="css/new_filehuangyuexiang.css"  />
 		<link rel="stylesheet" media="screen and (min-width:50px) and (max-width:1200px)"href="css/new_filehuangyuexiangtwo.css"   />
 		<!--<script type="text/javascript" src="js/new_fileonetwo.js" ></script>-->
@@ -566,12 +565,18 @@
 			var w=$(".uls-one").find("li:first").outerWidth(true);
 			var len=$(".uls-one li").length;
 			function show(){
+				clearInterval(timer);
 				timer=setInterval(function(){
 					$(".span-right").click();
 				},3000);
 			}
 			
 			show();
+			$(".ols-one li").click(function(){
+				curr=$(this).index();
+				$(".ols-one li a").eq(curr).addClass("a-one").parent().siblings().children().removeClass("a-one");
+				$(".uls-one li").eq(curr).stop().fadeIn().siblings().fadeOut();
+			})
 				
 			$(".span-right").click(function(){
 				curr++;
@@ -602,6 +607,12 @@
 				clearInterval(timer);
 			})
 			$(".span-left").mouseout(function(){
+				show();
+			})
+			$(".ols-one li").mousemove(function(){
+				clearInterval(timer);
+			});
+			$(".ols-one li").mouseout(function(){
 				show();
 			})
 		})	
